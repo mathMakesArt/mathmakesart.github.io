@@ -14,6 +14,14 @@ twitter_username: mathMakesArt
 instagram_username: mathMakesArt
 facebook_username: mathMakesArt
 
+# Cryptocurrency Related
+crypto_address_eth: "0xd9d581ba139C7D33b36738f6C402A4b3719e6874"
+opensea_username: "mathMakesArt"
+opensea_profile_url: "https://opensea.io/accounts/mathMakesArt"
+rarible_username: "mathmakesart"
+rarible_profile_url: "https://app.rarible.com/mathmakesart"
+cargo_profile_url: "https://app.cargo.build/creator/0xd9d581ba139C7D33b36738f6C402A4b3719e6874"
+
 # Build settings
 markdown: kramdown
 #theme: minima
