@@ -1,0 +1,36 @@
+# Site settings
+title: math makes art
+author: mathMakesArt
+description: >- # this means to ignore newlines until "baseurl:"
+  math. 
+  makes. 
+  art. 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mathmakes.art" # the base hostname & protocol for your site, e.g. http://example.com
+rss: rss
+email: mathmakesart@gmail.com
+github_username:  mathMakesArt
+twitter_username: mathMakesArt
+instagram_username: mathMakesArt
+facebook_username: mathMakesArt
+
+# Build settings
+markdown: kramdown
+#theme: minima
+remote_theme: mathMakesArt/mathmakesart-jekyll-theme@main
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+  
+  
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
