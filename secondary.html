@@ -1,0 +1,82 @@
+---
+title: Secondary Market
+layout: default
+permalink: /secondary
+---
+<br />
+{% include warning-secondary.html %}
+<br />
+<h1>Secondary Market</h1>
+<h3>
+    Sold by collectors. When a primary listing becomes sold out, it is moved here.
+    <br />
+    <strong>I earn a royalty on secondary sales, typically the default value of 10 percent.</strong>
+</h3>
+<br />
+<div class="listings">
+    {% for listing in site.secondary %}
+    <hr />
+    <br />
+    <div class="listing">
+        <div class="listing-info">
+            <div class="listing-info-heading">
+                <h2><strong>{{- listing.art_title -}}</strong></h2>
+            </div>
+            <div class="listing-info-subheading">
+                <h3>{{ listing.list_count }} editions listed ({{ listing.mint_count }} total)</h3>
+            </div>
+            <div class="listing-info-table">
+                <div class="listing-info-table-row">
+                    <div class="listing-info-table-cell-left">
+                        Release Date
+                    </div>
+                    <div class="listing-info-table-cell-right">
+                        {{- listing.mint_date | date: "%-d %B %Y" -}}
+                    </div>
+                </div>
+                <div class="listing-info-table-row">
+                    <div class="listing-info-table-cell-left">
+                        Platform
+                    </div>
+                    <div class="listing-info-table-cell-right">
+                        {{- listing.listing_platform -}}
+                    </div>
+                </div>
+                <div class="listing-info-table-row">
+                    <div class="listing-info-table-cell-left">
+                        Media Type
+                    </div>
+                    <div class="listing-info-table-cell-right">
+                        {{- listing.media_type -}}
+                    </div>
+                </div>
+                <div class="listing-info-table-row">
+                    <div class="listing-info-table-cell-left">
+                        Original Price
+                    </div>
+                    <div class="listing-info-table-cell-right">
+                        {{ listing.list_price_final }} {{ listing.currency_name }} ({{ listing.currency_symbol }})
+                    </div>
+                </div>
+            </div>
+            <div class="listing-info-link-internal">
+                <h3><strong><a href="{{- listing.url -}}">More Details</a></strong></h3>
+            </div>
+            <div class="listing-info-link-external">
+                <h2><strong><a href="{{- listing.listing_url -}}">View on {{ listing.listing_platform }}</a></strong></h2>
+            </div>
+        </div>
+        <div class="listing-preview">
+            <div class="listing-preview-image">
+                <img src="/media/preview-{{- listing.objkt_number -}}.png">
+            </div>
+        </div>
+    </div>
+    <br />
+    {% endfor %}
+    <hr />
+</div>
+<br />
+<br />
+{% include warning-secondary.html %}
+<br />
