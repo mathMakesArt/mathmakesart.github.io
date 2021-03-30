@@ -16,11 +16,26 @@ facebook_username: mathMakesArt
 
 # Cryptocurrency Related
 crypto_address_eth: "0xd9d581ba139C7D33b36738f6C402A4b3719e6874"
+crypto_address_xtz: "tz1gsrd3CfZv4BfPnYKq5pKpHGFVdtGCgd71"
 opensea_username: "mathMakesArt"
 opensea_profile_url: "https://opensea.io/accounts/mathMakesArt"
 rarible_username: "mathmakesart"
 rarible_profile_url: "https://app.rarible.com/mathmakesart"
 cargo_profile_url: "https://app.cargo.build/creator/0xd9d581ba139C7D33b36738f6C402A4b3719e6874"
+hicetnunc_profile_url: "https://www.hicetnunc.xyz/tz/tz1gsrd3CfZv4BfPnYKq5pKpHGFVdtGCgd71"
+
+# Collections
+collections:
+  primary:
+    output: true
+    sort_by: list_priority
+  secondary:
+    output: true
+    sort_by: list_priority
+  unlisted:
+    output: false
+    sort_by: list_priority
+
 
 # Build settings
 markdown: kramdown
