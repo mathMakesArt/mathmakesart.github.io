@@ -33,7 +33,7 @@ collections:
     output: true
     sort_by: list_priority
   unlisted:
-    output: false
+    output: true
     sort_by: list_priority
 
 
