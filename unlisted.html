@@ -3,12 +3,7 @@ title: Unlisted Art
 layout: default
 permalink: /unlisted
 ---
-<h1>Unlisted Art</h1>
-<h3>
-    <strong>Not for sale.</strong>
-    <br />
-    If you want to buy an unlisted piece, please contact me on <a href="https://twitter.com/mathmakesart"><strong>Twitter</strong></a>.
-</h3>
+{% include info-unlisted.html %}
 <br />
 <div class="listings">
     {% for listing in site.unlisted %}
