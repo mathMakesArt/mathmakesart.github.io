@@ -1,0 +1,66 @@
+{
+    "version": "v1.0.0a",
+    "license": { "name": "CC-BY-SA-4.0" },
+    "authors": [ "MathMakesArt <'mathmakesart@gmail.com'>" ],
+    "homepage": "https://mathmakes.art/",
+    "source": {
+        "tools": ["SmartPy dev-20201031", "Flextesa 20200921"],
+        "location": "https://gitlab.com/smondet/fa2-smartpy/-/blob/c05d8ff0/multi_asset.py"
+    },
+    "interfaces": [ "TZIP-012" ],
+    "errors":[
+        {
+            "error": {"int": "42"}, 
+            "expansion": { "string": "You did something wrong"},
+            "languages": ["en"]
+        },
+        {
+            "error": {"int": "42"}, 
+            "expansion": { "bytes": "0x7175656c7175652063686f7365206e276120706173206d61726368c3a9"},
+            "languages": ["fr"]
+        },
+        { "view": "translateStringError" }
+    ],
+    "views": [
+        {
+            "name": "get-allowance-for-user",
+            "description": "Get the current allowance for a user of the contract.",
+            "pure": "true",
+            "implementations": [
+                { "michelsonStorageView" : {
+                    "parameter": {
+                        "prim": "pair", "args": [
+                            {"prim": "mutez", "annots": ["%amount"]},
+                            {"prim": "string", "annots": ["user"]}
+                        ]
+                    },
+                    "returnType": {"prim": "nat"},
+                    "code": [
+                        {"prim": "DUP"},
+                        {"prim": "DIP", "args": [
+                            [
+                                {"prim": "CDR"},
+                                {"prim": "PUSH", "args": []}
+                            ]
+                        ]
+                        }
+                    ],
+                    "annotations": [
+                        { "name": "amount", "description": "The number of token in question." },
+                        { "name": "user", "description": "The token-user being referred to." }
+                    ]
+                    }
+                },
+                { "restApiQuery" : {
+                    "specificationUri": "https://example.com/openapi/my-token",
+                    "baseUri": "https://example.com/my-token/v2",
+                    "path": "/allowances"
+                   }
+                }
+            ]
+        }
+    ],
+    "dimensions" : [4, 3, 125, 125],
+    "palette" : "",
+    "priority" : [true, true, true]
+}
