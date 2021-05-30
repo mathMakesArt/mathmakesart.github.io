@@ -60,7 +60,7 @@
             ]
         }
     ],
-    "dimensions" : [4, 3, 125, 125],
+    "dimensions" : ["4", "3", "125", "125"],
     "palette" : "",
-    "priority" : [true, true, true]
+    "priority" : ["true", "true", "true"]
 }
