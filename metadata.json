@@ -3,7 +3,7 @@
     "license": { "name": "CC-BY-SA-4.0" },
     "authors": [ "MathMakesArt <'mathmakesart@gmail.com'>" ],
     "homepage": "https://mathmakes.art/",
-    "dimensions" : ["4", "3", "125", "125"],
+    "dimensions" : [4, 3, 125, 125],
     "palette" : "",
-    "priority" : ["true", "true", "true"]
+    "priority" : [true, true, true]
 }
