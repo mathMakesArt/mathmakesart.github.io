@@ -62,6 +62,14 @@ navbar_title: Primary Art
                         {{ listing.list_price_final }} {{ listing.currency_name }} ({{ listing.currency_symbol }})
                     </div>
                 </div>
+                <div class="listing-info-table-row">
+                    <div class="listing-info-table-cell-left">
+                        Royalty Value
+                    </div>
+                    <div class="listing-info-table-cell-right">
+                        {{ listing.royalty_percentage }} %
+                    </div>
+                </div>
             </div>
             <div class="listing-info-link-internal">
                 <h3><strong><a href="{{- listing.url -}}">More Details</a></strong></h3>
