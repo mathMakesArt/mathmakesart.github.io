@@ -1,0 +1,13 @@
+{
+    "description": "MathMakesArt Token (MATH) is a custom FA2 token, minted and managed by the artist MathMakesArt (@MathMakesArt).",
+    "interfaces": ["TZIP-012-1728fcfe"],
+    "version": "v1.0.0a",
+    "license": { "name": "CC-BY-SA-4.0" },
+    "authors": [ "MathMakesArt <'mathmakesart@gmail.com'>" ],
+    "homepage": "https://mathmakes.art/MATH/",
+    "dimensions" : ["N/A"],
+    "palette" : "N/A",
+    "priority" : ["N/A"],
+    "scale" : ["N/A"],
+    "tile" : ["N/A"]
+}
