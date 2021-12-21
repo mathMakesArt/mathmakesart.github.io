@@ -2,7 +2,7 @@
 layout: post
 title:  "How to Create your own JEKETNUNC Website"
 author: "MathMakesArt"
-date:   2020-04-10 06:00 -0000
+date:   2021-04-10 06:00 -0000
 tags: tutorial
 categories:
   - blog
