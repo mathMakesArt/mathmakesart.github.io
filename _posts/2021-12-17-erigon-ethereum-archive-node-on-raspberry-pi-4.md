@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Erigon (Ethereum) Archive Node on Raspberry Pi 4"
+title:  "TUTORIAL: Erigon (Ethereum) Archive Node on Raspberry Pi 4"
 author: "MathMakesArt"
 date:   2021-12-17 08:45 -0000
 tags: tutorial
@@ -8,15 +8,9 @@ categories:
   - blog
 ---
 
-# **Erigon-on-RPi-4**
-### My personal guide to running an Erigon archive node (Ethereum) on an 8GB Raspberry Pi 4
+### My guide to running an Ethereum archive node with Erigon on a Raspberry Pi 4 (8GB RAM) and SATA SSD
 
-<br />
-<br />
-
-### **NOTE:**
-
-#### **A live version of this content is maintained as the README of my [Erigon-on-RPi-4 repository](https://github.com/mathMakesArt/Erigon-on-RPi-4).**
+#### **NOTE: A live version of this content is maintained as the README of my [Erigon-on-RPi-4 repository](https://github.com/mathMakesArt/Erigon-on-RPi-4).**
 
 <br />
 <br />
